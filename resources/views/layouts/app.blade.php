@@ -15,7 +15,7 @@
 
 <body>
   <!-- header -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-4">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-secondary py-4">
     <div class="container">
       <a class="navbar-brand" href="#">farmCo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

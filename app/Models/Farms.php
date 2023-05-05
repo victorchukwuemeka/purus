@@ -111,5 +111,4 @@ class Farms extends Model
        return $this->hasMany(Products::class);
      }
 
-
 }

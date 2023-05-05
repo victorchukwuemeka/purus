@@ -15,8 +15,9 @@ class HomeController extends Controller
 {
 
   public function index(){
-    $farms = Farms::all();
-    $products = Products::all();
+    $farms = Farms::paginate(15)->sortDesc();
+    $products = Products::paginate(15)->sortDesc();
+
     $count = $farms->count();
     //dd($count);
     $id = [];

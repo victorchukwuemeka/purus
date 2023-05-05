@@ -4,7 +4,7 @@
 
 
 
-    <form action="{{ url('/store_products')}}" id='file-catcher' method="post" enctype="multipart/form-data">
+    <form  class="card" action="{{ url('/store_products')}}" id='file-catcher' method="post" enctype="multipart/form-data">
       {{csrf_field()}}
 
       <div class="">
@@ -16,15 +16,16 @@
       </div>
 
       <div class="">
-        <label for="products_files">upload files</label>
-        <input type="file" id="input" name="products_files" accept="image/*" multiple>
+        <label class="btn btn-default" for="products_files">
+        <input type="file" id="input" class="upload-input" name="products_files" accept="image/*" multiple>
+      </label>
         @error('file')
         <strong>{{ $message }}</strong>
         @enderror
       </div>
-
-
-       <input type="submit" class="btn btn-primary" value="Upload"/>
+       <div class="">
+         <input type="submit" class="btn btn-primary" value="Upload"/>
+       </div>
 
     </form>
     <script>
