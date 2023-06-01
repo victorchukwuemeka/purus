@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url>
+        <loc>https://purus.ng/</loc>
+        <lastmod>2023-05-31T06:35:32+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://purus.ng/farms</loc>
+        <lastmod>2023-05-31T06:35:33+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://purus.ng/about</loc>
+        <lastmod>2023-05-31T06:35:34+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://purus.ng/register</loc>
+        <lastmod>2023-05-31T06:35:34+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://purus.ng/create_a_farm</loc>
+        <lastmod>2023-05-31T06:35:34+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://purus.ng/login</loc>
+        <lastmod>2023-05-31T06:35:34+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+    <url>
+        <loc>https://purus.ng/password/reset</loc>
+        <lastmod>2023-05-31T06:35:35+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+            </url>
+</urlset>

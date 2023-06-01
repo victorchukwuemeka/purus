@@ -7,7 +7,7 @@
   @foreach( $viewData["farms"] as $farm)
   @if( $farm->get_id() === $product->get_farms_id() )
   <div class="col">
-    <div class="card text-dark bg-light">
+    <div class="card text-dark bg-light" style="width: 18rem";>
 
            <div class="card-header">  {{ $product->get_title() }} </div>
            <div class="card-body">
