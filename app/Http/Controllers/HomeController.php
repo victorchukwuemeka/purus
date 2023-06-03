@@ -37,7 +37,7 @@ class HomeController extends Controller
     //dd($product->get_farmers_id());
 
     $viewData["title"] = "Home Page - FarmCo";
-    return view('home.index')->with("viewData", $viewData);
+    return view('home.c')->with("viewData", $viewData);
   }
 
   public function about(){
