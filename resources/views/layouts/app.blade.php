@@ -10,19 +10,22 @@
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />-->
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2
     /css/all.min.css" />-->
-  <title>@yield('title', 'farmCo')</title>
+  <title>@yield('title', 'Purus')</title>
 </head>
 
 <body>
   <!-- header -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-secondary py-4">
     <div class="container">
-      <a class="navbar-brand" href="#">farmCo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">Purus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
+
           <a class="nav-link active" href="/">Home</a>
           <a class="nav-link active" href="{{ url('/farms')}}">Farms</a>
           <a class="nav-link active" href="{{ url('/about')}}">about</a>

@@ -11,13 +11,14 @@
 
            <div class="card-header">  {{ $product->get_title() }} </div>
            <div class="card-body">
-          <img src="{{ asset('/image/'.$product->get_products_files()) }}"
-           class="card-img-top img-fluid rounded" alt="card image">
-          <h5 class="card-title">Location: {{ $farm->get_location() }}</h5>
-        <p class="card-text">Contact:  {{ $farm->get_mobile() }} </p>
-        <a href="{{ $farm->get_link()}}" class="btn btn-primary">socials</a>
-
-      </div>
+             <div class="ratio ratio-1x1">
+               <img src="{{ asset('/image/'.$product->get_products_files()) }}"
+               class="card-img-top img-fluid rounded" alt="card image">
+             </div>
+             <h5 class="card-title">Location: {{ $farm->get_location() }}</h5>
+             <p class="card-text">Contact:  {{ $farm->get_mobile() }} </p>
+             <a href="{{ $farm->get_link()}}" class="btn btn-primary">socials</a>
+           </div>
     </div>
   </div>
     @endif
