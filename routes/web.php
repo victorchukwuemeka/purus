@@ -25,7 +25,12 @@ Route::get('/about', 'App\Http\Controllers\HomeController@about')
 Route::get('/rr', 'App\Http\Controllers\Farms\FarmsController@index');
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function(){
+  $name = "victor";
+  return $name;
+});
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/create_a_farm', [App\Http\Controllers\HomeController::class, 'create_a_farm'])
 ->name('create_a_farm');
 
