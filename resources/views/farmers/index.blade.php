@@ -5,7 +5,7 @@
     @foreach( $viewData["farms"] as $farm)
       <div class="card mb-3">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="ratio-md-4 ratio-4x3 col-md-4">
           <img src="{{ asset('/storage/'.$farm->get_avatar()) }}"
              class="img-fluid rounded-start" alt="...">
           </div>

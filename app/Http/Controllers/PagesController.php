@@ -7,13 +7,11 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\Farms;
 use App\Models\Products;
+use App\Models\Posts;
 
 
-
-
-class HomeController extends Controller
+class PagesController extends Controller
 {
-
   public function index(){
     $farms = Farms::paginate(15)->sortDesc();
     $products = Products::paginate(15)->sortDesc();
@@ -36,20 +34,29 @@ class HomeController extends Controller
     //dd($id);
     //dd($product->get_farmers_id());
 
-    $viewData["title"] = "Home Page - FarmCo";
+    $viewData["title"] = "Home Page - Purus";
     return view('home.i')->with("viewData", $viewData);
   }
 
-  public function about(){
-    $data1 = "About us - Online Store";
-    $data2 = "About us";
-    $description = "This is an about page ...";
-    $author = "Developed by: Your Name";
+  public function blog(){
+    $data1 = "You are welcome";
+    $data2 = "Make A Blog Post";
+    $description = "POST";
+    $author = "victor";
 
-    return view('home.about')->with("title", $data1)
-    ->with("subtitle", $data2)
-    ->with("description", $description)
-    ->with("author", $author);
+    $posts = Posts::paginate(15)->sortDesc();
+
+
+
+    $viewData = [];
+    $viewData['data1'] = $data1;
+    $viewData['data2'] = $data2;
+    $viewData['description'] = $description;
+    $viewData['author'] = $author;
+    $viewData["user_id_in_session"] = $user_id_in_session = Auth::id();
+    $viewData['posts'] = $posts;
+
+    return view('home.blog')->with('viewData', $viewData);
   }
 
   public function create_a_farm(){
@@ -67,7 +74,6 @@ class HomeController extends Controller
     $viewData["user_id_in_session"] = $user_id_in_session = Auth::id();
     return view('farmers.index')->with('viewData', $viewData);
   }
-
 
 
 }

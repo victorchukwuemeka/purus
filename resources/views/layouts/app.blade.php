@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="{{ asset('/css/app.css') }}" rel="stylesheet" />
+  <link href="{{ asset('/css/app.css') }}" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-  rel="stylesheet" crossorigin="anonymous" />
+  rel="stylesheet" crossorigin="anonymous"/> 
+  <script src="https://kit.fontawesome.com/fd683e659d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+  <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+  @livewireStyles
    <!--<link rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />-->
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2
@@ -28,7 +32,7 @@
 
           <a class="nav-link active" href="/">Home</a>
           <a class="nav-link active" href="{{ url('/farms')}}">Farms</a>
-          <a class="nav-link active" href="{{ url('/about')}}">about</a>
+          <a class="nav-link active" href="{{ url('/blog')}}">Blog</a>
           @guest
           <a class="nav-link active" href="{{ route('login') }}">Login</a>
           <a class="nav-link active" href="{{ route('register') }}">Register</a>
@@ -47,7 +51,8 @@
       </div>
     </div>
   </nav>
-  <header class="masthead bg-primary text-white text-center py-4">
+    @livewireScripts
+  <header class="masthead  bg-primary text-white text-center py-4">
     <div class="container d-flex align-items-center flex-column">
       <h2>@yield('subtitle', 'A Place For Farmers ')</h2>
     </div>

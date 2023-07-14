@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Products;
 use Illuminate\Support\Facades\Auth;
@@ -13,7 +13,7 @@ class ProductsController extends Controller
 {
     public function index()
     {
-      $home = new HomeController();
+      $home = new PagesController();
       return $home->index();
     }
 
@@ -79,7 +79,7 @@ class ProductsController extends Controller
          }
 
 
-        $home = new HomeController();
+        $home = new PagesController();
         $farms_home_page = $home->farms_page();
         return $farms_home_page;
     }

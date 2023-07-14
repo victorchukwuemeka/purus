@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Farms;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Farms;
@@ -14,8 +14,8 @@ class FarmsController extends Controller
     public function index()
     {
       //dd('vic');
-      $home = new HomeController();
-      $farmers_home_page = $home->farms_page();
+      $page = new PagesController();
+      $farmers_home_page = $page->farms_page();
       return $farmers_home_page;
 
     }
