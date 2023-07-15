@@ -24,8 +24,11 @@ use Spatie\Sitemap\SitemapGenerator;
 Route::get('/rr', 'App\Http\Controllers\Farms\FarmsController@index');
 Auth::routes();
 
-
-Route::get('/', [App\Http\Controllers\PagesController::class, 'index'])->name('home');
+Rooute::get('/', function()
+{
+   echo ="victo";
+});
+Route::get('/llll', [App\Http\Controllers\PagesController::class, 'index'])->name('home');
 Route::get('/create_a_farm', [App\Http\Controllers\PagesController::class, 'create_a_farm'])
 ->name('create_a_farm');
 
