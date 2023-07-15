@@ -26,7 +26,7 @@ Auth::routes();
 
 Rooute::get('/', function()
 {
-   echo ="victo";
+   echo "victo";
 });
 Route::get('/llll', [App\Http\Controllers\PagesController::class, 'index'])->name('home');
 Route::get('/create_a_farm', [App\Http\Controllers\PagesController::class, 'create_a_farm'])
