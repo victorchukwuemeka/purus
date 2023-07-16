@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
+//product route
 Route::get('products','App\Http\Controllers\ProductsController@index');
 Route::get('/create_products','App\Http\Controllers\ProductsController@create');
 Route::post('/store_products','App\Http\Controllers\ProductsController@store_products');

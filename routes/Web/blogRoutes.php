@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+//blog routes
+
 Route::get('/blog', 'App\Http\Controllers\PagesController@blog');
 Route::get('/create_blog', 'App\Http\Controllers\PostsController@create');
 Route::post('/store_blog', 'App\Http\Controllers\PostsController@store');
