@@ -1,10 +1,11 @@
 @extends('layouts.app')
 @section('content')
 <div class="">
-
+ @if($viewData['user_id_in_session'])
   <a href="{{ url('/create_blog')}}">
   <i class="fa-solid fa-pen-to-square"></i>
   </a>
+@endif
 </div>
 
 <!--<div class="container" style="background-color: white">-->
